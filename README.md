@@ -9,13 +9,13 @@ Chen Li, Gim Hee Lee. Coarse-to-fine Animal Pose and Shape Estimation. In Neurip
 The shape space of the SMAL model is learned from 41 scans of toy animals and thus lacks pose ans shape variations. This may limit the representation capacity of the SMAL model and result in poor fittings of the estimated shapes to the 2D observations, as shown in the second to fourth columns of the Figure below. To mitigate this problem, we propose a coarse-to-fine approach, which combines model-based and model-free representations. Some refined results are shown in the fifth to seventh columns.
 
 <p align="center">
-  <img width="800" height="200" src="result_examples.png">
+  <img width="800" height="237" src="result_examples.png">
 </p>
 
 Our network consists of a coarse estimation stage and a mesh refinement stage. The SMAL model parameters and camera parameters are regressed from the input image in the first stage for coarse estimation. This coarse estimation is further refined by an encoder-decoder structured GCN in the second stage. 
 
 <p align="center">
-  <img width="800" height="245" src="network.png">
+  <img width="800" height="331" src="network.png">
 </p>
 
 For more details, please refer to [our paper](https://arxiv.org/pdf/2111.08176.pdf).
