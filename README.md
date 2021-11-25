@@ -32,7 +32,7 @@ For more details, please refer to [our paper](https://arxiv.org/pdf/2111.08176.p
 
 **Dependencies**
 1. Python 3.7.10
-2. Pytorch>=1.5.0
+2. Pytorch=1.5.0
 
 Please refer to requirements.txt for more details on dependencies.
 
