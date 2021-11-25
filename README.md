@@ -47,11 +47,11 @@ We provide the [pretrained model](https://drive.google.com/file/d/1mvr7iYkyKVUxP
 ```
 python main_meshgraph.py --output_dir logs/stage2 --nEpochs 10 --local_feat --batch_size 32 --freezecoarse --gpu_ids 0 --pretrained logs/pretrained_models/stage1.pth.tar
 ```
-Then you can continue to the training for stage 3 by running:
+Then you can continue to train stage 3 by running:
 ```
 python main_meshgraph.py --output_dir logs/stage3 --nEpochs 200 --lr 1e-5 --local_feat --w_arap 10000 --w_dice 1000 --w_dice_refine 100 --w_pose_limit_prior 5000 --resume logs/pretrained_models/stage2.pth.tar --gpu_ids 0
 ```
-Note that you will have to change the '--resume' to the path of your own model if you want to use your own model from stage 2. 
+Note that you will need to change the '--resume' to the path of your own model if you want to use your own model from stage 2. 
 
 Alternatively, you can also train from scratch. In this case, you will need to pretrain the coarse estimation part first by running:
 ```
