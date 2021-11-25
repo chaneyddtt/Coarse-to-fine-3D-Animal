@@ -53,7 +53,7 @@ python main_meshgraph.py --output_dir logs/stage3 --nEpochs 200 --lr 1e-5 --loca
 ```
 Note that you will have to change the '--resume' to the path of your own model if you want to use your own model from stage 2. 
 
-Alternatively, you can train from scratch. In this case, you will need to pretrain the coarse estimation part first by running:
+Alternatively, you can also train from scratch. In this case, you will need to pretrain the coarse estimation part first by running:
 ```
 python main.py --batch_size 32 --output_dir logs/stage1 --gpu_ids 0
 ```
@@ -61,7 +61,7 @@ Then you can continue to train stage 2 and stage 3 as we have explained. Note th
 
 **Test**
 
-You can test our model on the StandfordExtra dataset by running:
+Test our model on the StandfordExtra dataset by running:
 ```
 python eval.py --output_dir logs/test --resume logs/pretrained_models/stage3.pth.tar --gpu_ids 0 --local_feat
 ```
@@ -69,7 +69,7 @@ or on the Animal Pose dataset by running:
 ```
 python eval.py --output_dir logs/test --resume logs/pretrained_models/stage3.pth.tar --gpu_ids 0 --local_feat --dataset animal_pose
 ```
-You can also save the qualitative results by adding '--save_results' to the command. 
+Qualitative results can be genrated and saved by adding '--save_results' to the command. 
 
 **Acknowledgements**
 
