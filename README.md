@@ -22,11 +22,12 @@ For more details, please refer to [our paper](https://arxiv.org/pdf/2111.08176.p
 
 **Bibtex**
 ```
-@inproceedings{li2021coarsetofine,
-      title={Coarse-to-fine Animal Pose and Shape Estimation}, 
-      author={Chen Li and Gim Hee Lee},
-      year={2021},
-      booktitle={NeurIPS},
+@inproceedings{
+li2021coarsetofine,
+title={Coarse-to-fine Animal Pose and Shape Estimation},
+author={Chen Li and Gim Hee Lee},
+booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+year={2021}
 }
 ```
 
