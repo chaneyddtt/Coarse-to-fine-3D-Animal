@@ -42,6 +42,10 @@ Please refer to requirements.txt for more details on dependencies.
 
 * Download the [Animal Pose dataset](https://sites.google.com/view/animal-pose/) and the test split from [WLDO](https://github.com/benjiebob/WLDO/tree/master/data/animal_pose) and put them under the foder ./data/.
 
+**Download SMAL and priors**
+* Download the [SMAL](https://github.com/benjiebob/WLDO/tree/master/data) template and put the downloaded smal folder under ./data/.
+* Download the [pose prior data](https://github.com/benjiebob/SMALify/tree/master/data) and put the downloaded priors folder under ./data/.
+
 **Train**
 
 We provide the [pretrained model](https://drive.google.com/file/d/1mvr7iYkyKVUxPdFExE0HOsrVNl_sc1O1/view?usp=sharing) for each stage. You can download the pretrained models and put them under the folder ./logs/pretrained_models/. To save training time, You can directly train from stage 2 using our pretrained model for stage 1 ('stage1.pth.tar') by running: 
